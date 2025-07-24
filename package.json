@@ -1,0 +1,31 @@
+{
+  "name": "hackamazonia-website",
+  "description": "🌿 Competition focused on the Amazon Rainforest, empowering youth through tech, teamwork, and environmental impact.",
+  "homepage": "https://github.com/HackAmazonia/website",
+  "bugs": {
+    "url": "https://github.com/HackAmazonia/website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HackAmazonia/website.git"
+  },
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "concurrently": "^9.2.0",
+    "html-minifier-terser": "^7.2.0",
+    "http-server": "^14.1.1",
+    "rimraf": "^6.0.1",
+    "tailwindcss": "^4.1.11"
+  },
+  "scripts": {
+    "dev": "concurrently -k \"npx @tailwindcss/cli -i src/assets/styles/main.css -o src/assets/styles.css --watch\" \"npx http-server src -p 5173 -c-1\"",
+    "clean": "rimraf dist",
+    "copy": "mkdir dist && cp -r src/* dist/",
+    "build:css": "npx @tailwindcss/cli -i src/assets/styles/main.css -o dist/assets/styles.css --minify",
+    "minify:html": "html-minifier-terser --input-dir dist --output-dir dist --file-ext html --collapse-whitespace --remove-comments --remove-redundant-attributes --remove-empty-attributes --remove-optional-tags --minify-css true --minify-js true",
+    "build": "npm run clean && npm run copy && npm run build:css && npm run minify:html",
+    "serve": "npx http-server dist -p 8000 -c-1"
+  }
+}

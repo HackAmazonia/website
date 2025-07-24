@@ -1,0 +1,15 @@
+/* One line to pull Tailwind in v4 */
+@import "tailwindcss";
+
+/* Optional: configure tokens right in CSS */
+@theme {
+  --color-brand: #1e40af;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+/* You can still add custom layers/utilities if needed */
+@layer utilities {
+  .content-auto {
+    content-visibility: auto;
+  }
+}
