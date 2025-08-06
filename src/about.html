@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>HackAmazônia</title>
+  <meta name="description"
+    content="Competição focada na Floresta Amazônica, inspirando jovens com tecnologia, trabalho em equipe e impacto ambiental." />
+
+  <meta property="og:title" content="HackAmazônia" />
+  <meta property="og:description"
+    content="Competição focada na Floresta Amazônica, inspirando jovens com tecnologia, trabalho em equipe e impacto ambiental." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hackamazonia.org/" />
+  <!-- <meta property="og:image" content="https://hackamazonia.org/assets/img/social-card.jpg" /> -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="./assets/styles.css" />
+
+  <link rel="icon" href="./assets/img/favicon.ico" />
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="bg-dark-green text-white sticky top-0 z-50 shadow-lg">
+    <nav class="container mx-auto px-4 sm:px-6 py-4">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center space-x-2 sm:space-x-3">
+          <a href="/">
+            <img class="h-12" src="./assets/img/logo.png" alt="Logo HackAmazônia">
+          </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="./about.html" class="hover:text-bright-green transition flex items-center gap-2">
+            <i data-lucide="info" class="w-4 h-4"></i>
+            Sobre nós
+          </a>
+          <a href="https://forms.gle/3EtdZ5KWa4HvqxRL9"
+            class="hover:text-bright-green transition flex items-center gap-2">
+            <i data-lucide="user-plus" class="w-4 h-4"></i>
+            Inscreva-se
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden p-2">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-medium-green pt-4">
+        <a href="./about.html" class="block py-2 hover:text-bright-green transition flex items-center gap-2">
+          <i data-lucide="info" class="w-4 h-4"></i>
+          Sobre nós
+        </a>
+        <a href="https://forms.gle/3EtdZ5KWa4HvqxRL9"
+          class="block py-2 hover:text-bright-green transition flex items-center gap-2">
+          <i data-lucide="user-plus" class="w-4 h-4"></i>
+          Inscreva-se
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-dark-green to-medium-green text-white py-16 md:py-24 px-4 sm:px-6">
+    <div class="container mx-auto max-w-6xl">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold">Sobre nós</h1>
+    </div>
+  </section>
+
+  <!-- Bloco: frase + cartões sobrepostos -->
+  <section class="bg-medium-green/40 py-12 md:py-16 px-4 sm:px-6">
+    <div class="container mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-white text-2xl sm:text-3xl font-bold leading-snug">
+          Buscamos ser uma competição que foge do esperado.
+        </h2>
+      </div>
+      <!-- <div class="relative h-56 sm:h-64">
+        <div class="absolute left-0 top-2 bg-white/80 rounded-xl shadow-2xl w-3/5 h-40 sm:h-44"></div>
+        <div class="absolute right-0 bottom-0 bg-white rounded-xl shadow-2xl w-3/5 h-40 sm:h-44"></div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Fundadores -->
+  <section class="py-12 md:py-16 px-4 sm:px-6 bg-white">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-dark-green mb-8">Os fundadores</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-[280px,1fr] gap-8 items-start">
+        <div class="space-y-4 text-gray-700 leading-relaxed">
+          <p>
+            Nosso time fundador acredita que tecnologia e atitude de dono andam juntas para gerar impacto real na
+            Amazônia. Juntamos educação prática, comunidade e desafios de verdade.
+          </p>
+          <p>
+            Entre workshops, mentorias e entregas, criamos um ambiente seguro para quem está começando e exigente para
+            quem já programa há um tempo. O objetivo é o mesmo: sair com algo pronto e apresentável.
+          </p>
+          <p>
+            A proposta é formar pessoas que sabem codar <strong>e</strong> comunicar, trabalhando em equipe e entregando
+            valor do zero ao MVP.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nossa equipe -->
+  <section class="py-6 md:py-8 px-4 sm:px-6 bg-gray-50">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-dark-green mb-8">Nossa equipe</h2>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
+        <!-- Card de membro -->
+        <div class="text-center">
+          <img src="./assets/img/lizandra.jpg" alt="Lizandra Souza"
+            class="w-24 h-24 mx-auto rounded-full shadow object-cover" />
+          <p class="mt-3 font-semibold">Lizandra Souza</p>
+          <p class="text-xs text-gray-500">Co-fundadora</p>
+        </div>
+
+        <div class="text-center">
+          <img src="./assets/img/tiago.jpg" alt="Tiago Trindade"
+            class="w-24 h-24 mx-auto rounded-full shadow object-cover" />
+          <p class="mt-3 font-semibold">Tiago Trindade</p>
+          <p class="text-xs text-gray-500">Co-fundador</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Missão, Visão e Valores -->
+  <section class="py-6 md:py-8 px-4 sm:px-6 bg-white">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-dark-green mb-8">Missão, Visão e Valores</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-xl border bg-gray-50 hover:shadow-md transition">
+          <div class="flex items-center gap-2 mb-3">
+            <i data-lucide="target" class="w-5 h-5 text-bright-green"></i>
+            <h3 class="font-bold">Missão</h3>
+          </div>
+          <p class="text-gray-600 text-sm">
+            Impulsionar jovens a construírem soluções para a Amazônia, unindo código, comunicação e trabalho em equipe.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl border bg-gray-50 hover:shadow-md transition">
+          <div class="flex items-center gap-2 mb-3">
+            <i data-lucide="binoculars" class="w-5 h-5 text-bright-green"></i>
+            <h3 class="font-bold">Visão</h3>
+          </div>
+          <p class="text-gray-600 text-sm">
+            Ser a porta de entrada mais acolhedora e prática para quem quer aprender tecnologia criando impacto real.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl border bg-gray-50 hover:shadow-md transition">
+          <div class="flex items-center gap-2 mb-3">
+            <i data-lucide="sparkles" class="w-5 h-5 text-bright-green"></i>
+            <h3 class="font-bold">Valores</h3>
+          </div>
+          <p class="text-gray-600 text-sm">
+            Aprendizado contínuo, atitude de dono, colaboração, respeito à floresta e entrega com propósito.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-12 md:py-16 px-4 sm:px-6 bg-gray-100">
+    <div class="container mx-auto max-w-4xl">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-dark-green mb-8 text-center">HackAmazônia FAQ</h2>
+
+      <div class="space-y-3">
+        <details class="bg-white rounded-lg p-4 border">
+          <summary class="cursor-pointer font-semibold flex items-center justify-between">
+            O que é o HackAmazônia?
+            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </summary>
+          <p class="mt-3 text-gray-600 text-sm">
+            Uma competição educacional focada na Amazônia, com aulas, mentoria e entregas práticas.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-lg p-4 border">
+          <summary class="cursor-pointer font-semibold flex items-center justify-between">
+            Como eu faço parte da competição?
+            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </summary>
+          <p class="mt-3 text-gray-600 text-sm">
+            Monte seu time de 2 a 6 pessoas e realize a inscrição pelo formulário.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-lg p-4 border">
+          <summary class="cursor-pointer font-semibold flex items-center justify-between">
+            O que nos faz diferente de outras competições?
+            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </summary>
+          <p class="mt-3 text-gray-600 text-sm">
+            Combinamos programação com soft skills e entregas apresentáveis, com mentoria e workshops.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-lg p-4 border">
+          <summary class="cursor-pointer font-semibold flex items-center justify-between">
+            Quem são os fundadores?
+            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </summary>
+          <p class="mt-3 text-gray-600 text-sm">
+            Um grupo de pessoas apaixonadas por educação, tecnologia e pela floresta amazônica.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-lg p-4 border">
+          <summary class="cursor-pointer font-semibold flex items-center justify-between">
+            Quanto tempo dura a competição?
+            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </summary>
+          <p class="mt-3 text-gray-600 text-sm">
+            Aproximadamente duas semanas somando estudos, atividades, entrega e final.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-lg p-4 border">
+          <summary class="cursor-pointer font-semibold flex items-center justify-between">
+            Por que a competição foi criada?
+            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </summary>
+          <p class="mt-3 text-gray-600 text-sm">
+            Para formar talentos que resolvam problemas reais ligados à Amazônia.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-lg p-4 border">
+          <summary class="cursor-pointer font-semibold flex items-center justify-between">
+            Qual a taxa de inscrição?
+            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </summary>
+          <p class="mt-3 text-gray-600 text-sm">
+            Não há taxa de inscrição.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-br from-dark-green to-medium-green text-white py-12 px-4 sm:px-6">
+    <div class="container mx-auto max-w-6xl">
+      <div class="flex justify-center space-x-3 sm:space-x-4">
+        <a href="https://www.instagram.com/hackamazonia/"
+          class="w-9 h-9 sm:w-10 sm:h-10 bg-bright-green rounded-full flex items-center justify-center hover:bg-verde-bright transition touch-manipulation">
+          <i data-lucide="instagram" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/hackamaz%C3%B4nia/"
+          class="w-9 h-9 sm:w-10 sm:h-10 bg-bright-green rounded-full flex items-center justify-center hover:bg-verde-bright transition touch-manipulation">
+          <i data-lucide="linkedin" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+        </a>
+        <a href="https://github.com/HackAmazonia"
+          class="w-9 h-9 sm:w-10 sm:h-10 bg-bright-green rounded-full flex items-center justify-center hover:bg-verde-bright transition touch-manipulation">
+          <i data-lucide="github" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+        </a>
+      </div>
+
+      <p class="text-center text-xs sm:text-sm text-gray-400 mt-6 sm:mt-8">
+        HackAmazônia
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Inicializar os ícones do Lucide
+    lucide.createIcons();
+
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      const icon = mobileMenuButton.querySelector('i');
+      if (mobileMenu.classList.contains('hidden')) {
+        icon.setAttribute('data-lucide', 'menu');
+      } else {
+        icon.setAttribute('data-lucide', 'x');
+      }
+      lucide.createIcons();
+    });
+
+    // Close mobile menu when clicking a link
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        const icon = mobileMenuButton.querySelector('i');
+        icon.setAttribute('data-lucide', 'menu');
+        lucide.createIcons();
+      });
+    });
+  </script>
+</body>
+
+</html>

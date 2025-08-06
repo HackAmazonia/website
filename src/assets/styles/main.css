@@ -1,15 +1,9 @@
-/* One line to pull Tailwind in v4 */
 @import "tailwindcss";
 
-/* Optional: configure tokens right in CSS */
 @theme {
-  --color-brand: #1e40af;
-  --font-sans: "Inter", system-ui, sans-serif;
-}
-
-/* You can still add custom layers/utilities if needed */
-@layer utilities {
-  .content-auto {
-    content-visibility: auto;
-  }
+  --color-dark-green: #1B4332;
+  --color-medium-green: #2D6A4F;
+  --color-bright-green: #52B788;
+  --color-bright-green: #95D5B2;
+  --color-mint-green: #B7E4C7;
 }

@@ -20,18 +20,458 @@
   <link rel="stylesheet" href="./assets/styles.css" />
 
   <link rel="icon" href="./assets/img/favicon.ico" />
+
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
-<body
-  class="font-sans text-gray-800 dark:text-gray-100 bg-white dark:bg-gray-950 flex items-center justify-center min-h-screen text-center p-6">
-  <div>
-    <h1 class="text-4xl md:text-5xl font-bold mb-4">Em breve: HackAmazônia</h1>
-    <p class="text-lg md:text-xl mb-6">
-      Estamos preparando algo incrível para conectar jovens, tecnologia e a floresta.
-    </p>
-  </div>
-</body>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="bg-dark-green text-white sticky top-0 z-50 shadow-lg">
+    <nav class="container mx-auto px-4 sm:px-6 py-4">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center space-x-2 sm:space-x-3">
+          <a href="/">
+            <img class="h-12" src="./assets/img/logo.png" alt="Logo HackAmazônia">
+          </a>
+        </div>
 
-</html>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="./about.html" class="hover:text-bright-green transition flex items-center gap-2">
+            <i data-lucide="info" class="w-4 h-4"></i>
+            Sobre nós
+          </a>
+          <a href="https://forms.gle/3EtdZ5KWa4HvqxRL9"
+            class="hover:text-bright-green transition flex items-center gap-2">
+            <i data-lucide="user-plus" class="w-4 h-4"></i>
+            Inscreva-se
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden p-2">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-medium-green pt-4">
+        <a href="./about.html" class="block py-2 hover:text-bright-green transition flex items-center gap-2">
+          <i data-lucide="info" class="w-4 h-4"></i>
+          Sobre nós
+        </a>
+        <a href="https://forms.gle/3EtdZ5KWa4HvqxRL9"
+          class="block py-2 hover:text-bright-green transition flex items-center gap-2">
+          <i data-lucide="user-plus" class="w-4 h-4"></i>
+          Inscreva-se
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-dark-green to-medium-green text-white py-12 sm:py-16 md:py-24 px-4 sm:px-6">
+    <div class="container mx-auto max-w-4xl">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
+        O que te faz programar<br>
+        todos os dias?
+      </h1>
+      <p class="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-mint-green max-w-2xl">
+        É transformar o erro em acerto e liberar "eu quem consegui!"
+      </p>
+      <div class="space-y-4">
+        <button
+          class="bg-white text-dark-green px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-mint-green transition flex items-center gap-2 group touch-manipulation">
+          <i data-lucide="rocket" class="w-5 h-5 group-hover:rotate-12 transition-transform"></i>
+          <a href="https://forms.gle/3EtdZ5KWa4HvqxRL9">
+            Inscreva-se
+          </a>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- O que nos faz diferente -->
+  <section class="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-white">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12 md:mb-16 text-dark-green">
+        O que nos faz <span class="text-bright-green">diferente?</span>
+      </h2>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12">
+        <!-- Item 01 -->
+        <div class="flex group hover:transform hover:scale-105 transition-transform">
+          <div
+            class="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-200 mr-4 sm:mr-6 group-hover:text-mint-green transition">
+            01</div>
+          <div class="flex-1">
+            <div class="flex items-start gap-2 mb-3">
+              <i data-lucide="graduation-cap" class="w-5 h-5 sm:w-6 sm:h-6 text-bright-green mt-1 flex-shrink-0"></i>
+              <h3 class="text-lg sm:text-xl font-bold">
+                Nunca participou de<br>
+                uma competição?<br>
+                Nós teremos aulas.
+              </h3>
+            </div>
+            <p class="text-sm sm:text-base text-gray-600">
+              Atividades, workshops e mais. Te ensinamos como
+              executar as informações certas e como se apresentar.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 02 -->
+        <div class="flex group hover:transform hover:scale-105 transition-transform">
+          <div
+            class="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-200 mr-4 sm:mr-6 group-hover:text-mint-green transition">
+            02</div>
+          <div class="flex-1">
+            <div class="flex items-start gap-2 mb-3">
+              <i data-lucide="lightbulb" class="w-5 h-5 sm:w-6 sm:h-6 text-bright-green mt-1 flex-shrink-0"></i>
+              <h3 class="text-lg sm:text-xl font-bold">
+                Combinamos a<br>
+                programação com<br>
+                atitude de dono.
+              </h3>
+            </div>
+            <p class="text-sm sm:text-base text-gray-600">
+              Sabe quem se diferencia em um mercado cheio de programadores? É os que sabem tanto fazer um trabalho de
+              código impecável, como aquele que sabe o apresentar bem também. Nessa competição, as soft skills serão tão
+              avaliadas quanto as hard skills.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 03 -->
+        <div class="flex group hover:transform hover:scale-105 transition-transform">
+          <div
+            class="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-200 mr-4 sm:mr-6 group-hover:text-mint-green transition">
+            03</div>
+          <div class="flex-1">
+            <div class="flex items-start gap-2 mb-3">
+              <i data-lucide="users" class="w-5 h-5 sm:w-6 sm:h-6 text-bright-green mt-1 flex-shrink-0"></i>
+              <h3 class="text-lg sm:text-xl font-bold">
+                Te ensinamos a<br>
+                trabalhar em grupo.<br>
+                Times de 2-6, é certo.
+              </h3>
+            </div>
+            <p class="text-sm sm:text-base text-gray-600">
+              Se você acredita que programar em grupo não ajuda,
+              te mostramos porque juntar as suas forças é muito importante.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 04 -->
+        <div class="flex group hover:transform hover:scale-105 transition-transform">
+          <div
+            class="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-200 mr-4 sm:mr-6 group-hover:text-mint-green transition">
+            04</div>
+          <div class="flex-1">
+            <div class="flex items-start gap-2 mb-3">
+              <i data-lucide="trophy" class="w-5 h-5 sm:w-6 sm:h-6 text-bright-green mt-1 flex-shrink-0"></i>
+              <h3 class="text-lg sm:text-xl font-bold">
+                Te reconhecemos pelo<br>
+                seu esforço, mesmo sem<br>
+                taxa de inscrição.
+              </h3>
+            </div>
+            <p class="text-sm sm:text-base text-gray-600">
+              Todas as aulas, materiais disponibilizados, comida e
+              prêmios para todos os participantes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- A Competição -->
+  <section class="bg-gradient-to-r from-dark-green to-medium-green text-white py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+    <div class="container mx-auto max-w-6xl">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+        <div class="order-2 lg:order-1">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 md:mb-8 flex items-center gap-3">
+            <i data-lucide="award" class="w-7 h-7 sm:w-8 sm:h-8 text-verde-bright"></i>
+            A competição
+          </h2>
+          <p class="mb-4 sm:mb-6 text-base sm:text-lg leading-relaxed">
+            O HackAmazônia é mais do que uma competição - é uma jornada de transformação.
+            Durante uma semana intensas, você e seu time vão desenvolver soluções inovadoras
+            para divulgação dos problemas enfrentados pela floresta amazônica.
+          </p>
+          <p class="mb-4 sm:mb-6 text-mint-green text-sm sm:text-base">
+            Trabalhamos com mentores experientes, workshops práticos e uma rede de apoio
+            que te acompanha do zero ao MVP. Não importa seu nível de experiência -
+            o que vale é sua vontade de criar impacto positivo.
+          </p>
+        </div>
+
+        <div
+          class="order-1 lg:order-2 bg-medium-green rounded-2xl h-64 sm:h-80 md:h-96 shadow-2xl flex items-center justify-center hover:shadow-3xl transition-shadow">
+          <img src="./assets/img/florest.jpg" alt="Floresta">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Linha do Tempo -->
+  <section class="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-gray-50">
+    <div class="container mx-auto max-w-6xl">
+      <h2
+        class="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 md:mb-16 text-dark-green flex items-center gap-3">
+        <i data-lucide="clock" class="w-8 h-8 sm:w-10 sm:h-10 text-bright-green"></i>
+        Linha do Tempo
+      </h2>
+
+      <div class="space-y-6 sm:space-y-8">
+        <!-- Fase de Inscrições -->
+        <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 border-l-4 border-blue-500">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-2">
+            <h3 class="text-lg sm:text-xl font-bold text-gray-800 flex items-center gap-2">
+              <i data-lucide="clipboard-check" class="w-5 h-5 text-blue-500"></i>
+              Fase de Inscrições
+            </h3>
+            <span class="text-xs sm:text-sm text-gray-500 bg-blue-50 px-3 py-1 rounded-full inline-block">
+              09 de agosto - 29 de agosto
+            </span>
+          </div>
+          <div class="space-y-3">
+            <div
+              class="flex items-center justify-between bg-gray-50 rounded-lg p-3 sm:p-4 hover:bg-gray-100 transition touch-manipulation">
+              <span class="flex items-center gap-2 text-sm sm:text-base">
+                <i data-lucide="file-text" class="w-4 h-4 text-gray-600"></i>
+                Abertura de Inscrições
+              </span>
+              <i data-lucide="chevron-right" class="w-5 h-5 text-gray-400"></i>
+            </div>
+            <div
+              class="bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg p-3 sm:p-4 flex items-center justify-between hover:shadow-lg transition touch-manipulation">
+              <span class="flex items-center gap-2 font-semibold text-sm sm:text-base">
+                <i data-lucide="users-2" class="w-5 h-5"></i>
+                Inscreva seu grupo
+              </span>
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fase de Largada -->
+        <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 border-l-4 border-bright-green">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-2">
+            <h3 class="text-lg sm:text-xl font-bold text-gray-800 flex items-center gap-2">
+              <i data-lucide="flag" class="w-5 h-5 text-bright-green"></i>
+              Fase de Largada
+            </h3>
+            <span class="text-xs sm:text-sm text-gray-500 bg-mint-green px-3 py-1 rounded-full inline-block">
+              30 de agosto - 06 de setembro
+            </span>
+          </div>
+          <div class="space-y-3">
+            <div
+              class="flex items-center justify-between bg-gray-50 rounded-lg p-3 sm:p-4 hover:bg-gray-100 transition touch-manipulation">
+              <span class="flex items-center gap-2 text-sm sm:text-base">
+                <i data-lucide="book-open" class="w-4 h-4 text-gray-600"></i>
+                Estudar tema
+              </span>
+              <i data-lucide="chevron-right" class="w-5 h-5 text-gray-400"></i>
+            </div>
+            <div
+              class="bg-gradient-to-r from-bright-green to-medium-green text-white rounded-lg p-3 sm:p-4 flex items-center justify-between hover:shadow-lg transition touch-manipulation">
+              <span class="flex items-center gap-2 font-semibold text-sm sm:text-base">
+                <i data-lucide="video" class="w-5 h-5"></i>
+                Encontro inicial
+              </span>
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </div>
+            <div
+              class="bg-gradient-to-r from-bright-green to-medium-green text-white rounded-lg p-3 sm:p-4 flex items-center justify-between hover:shadow-lg transition touch-manipulation">
+              <span class="flex items-center gap-2 font-semibold text-sm sm:text-base">
+                <i data-lucide="user-check" class="w-5 h-5"></i>
+                Mentoria
+              </span>
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fase de Entrega -->
+        <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 border-l-4 border-orange-500">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-2">
+            <h3 class="text-lg sm:text-xl font-bold text-gray-800 flex items-center gap-2">
+              <i data-lucide="package" class="w-5 h-5 text-orange-500"></i>
+              Fase de Entrega
+            </h3>
+            <span class="text-xs sm:text-sm text-gray-500 bg-orange-50 px-3 py-1 rounded-full inline-block">
+              07 de setembro - 13 de setembro
+            </span>
+          </div>
+          <div class="space-y-3">
+            <div
+              class="flex items-center justify-between bg-gray-50 rounded-lg p-3 sm:p-4 hover:bg-gray-100 transition touch-manipulation">
+              <span class="flex items-center gap-2 text-sm sm:text-base">
+                <i data-lucide="upload" class="w-4 h-4 text-gray-600"></i>
+                Submissões
+              </span>
+              <i data-lucide="chevron-right" class="w-5 h-5 text-gray-400"></i>
+            </div>
+            <div
+              class="bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-lg p-3 sm:p-4 flex items-center justify-between hover:shadow-lg transition touch-manipulation">
+              <span class="flex items-center gap-2 font-semibold text-sm sm:text-base">
+                <i data-lucide="clipboard-list" class="w-5 h-5"></i>
+                Critério de Avaliação
+              </span>
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </div>
+            <div
+              class="bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-lg p-3 sm:p-4 flex items-center justify-between hover:shadow-lg transition touch-manipulation">
+              <span class="flex items-center gap-2 font-semibold text-sm sm:text-base">
+                <i data-lucide="presentation" class="w-5 h-5"></i>
+                Apresentação Final
+              </span>
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fase Final -->
+        <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 border-l-4 border-yellow-500">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4 gap-2">
+            <h3 class="text-lg sm:text-xl font-bold text-gray-800 flex items-center gap-2">
+              <i data-lucide="medal" class="w-5 h-5 text-yellow-500"></i>
+              Fase Final
+            </h3>
+            <span class="text-xs sm:text-sm text-gray-500 bg-yellow-50 px-3 py-1 rounded-full inline-block">
+              20 de setembro
+            </span>
+          </div>
+          <div class="space-y-3">
+            <div
+              class="flex items-center justify-between bg-gray-50 rounded-lg p-3 sm:p-4 hover:bg-gray-100 transition touch-manipulation">
+              <span class="flex items-center gap-2 text-sm sm:text-base">
+                <i data-lucide="gift" class="w-4 h-4 text-gray-600"></i>
+                Entrega dos prêmios
+              </span>
+              <i data-lucide="chevron-right" class="w-5 h-5 text-gray-400"></i>
+            </div>
+            <div
+              class="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white rounded-lg p-3 sm:p-4 flex items-center justify-between hover:shadow-lg transition touch-manipulation">
+              <span class="flex items-center gap-2 font-semibold text-sm sm:text-base">
+                <i data-lucide="award" class="w-5 h-5"></i>
+                Cerimônia de Reconhecimento
+              </span>
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </div>
+            <div
+              class="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white rounded-lg p-3 sm:p-4 flex items-center justify-between hover:shadow-lg transition touch-manipulation">
+              <span class="flex items-center gap-2 font-semibold text-sm sm:text-base">
+                <i data-lucide="rocket" class="w-5 h-5"></i>
+                Entrega de MVP
+              </span>
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prêmios -->
+  <section class="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-white">
+    <div class="container mx-auto max-w-4xl">
+      <h2
+        class="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 md:mb-16 text-center text-dark-green flex items-center justify-center gap-3">
+        <i data-lucide="trophy" class="w-8 h-8 sm:w-10 sm:h-10 text-yellow-500"></i>
+        Prêmios
+      </h2>
+
+      <div
+        class="flex flex-col sm:flex-row justify-center items-center sm:items-end space-y-6 sm:space-y-0 sm:space-x-6 md:space-x-8">
+        <div class="text-center group hover:transform hover:scale-110 transition-transform order-2 sm:order-1">
+          <div
+            class="bg-gradient-to-t from-gray-600 to-gray-500 w-24 sm:w-28 h-32 sm:h-36 rounded-t-lg shadow-xl flex items-center justify-center mx-auto">
+            <i data-lucide="medal" class="w-10 h-10 sm:w-12 sm:h-12 text-white"></i>
+          </div>
+          <p class="mt-3 font-bold text-lg sm:text-xl text-gray-700">2º Lugar</p>
+          <p class="text-gray-500 mt-1 text-sm sm:text-base">R$ 200</p>
+        </div>
+
+        <div class="text-center group hover:transform hover:scale-110 transition-transform order-1 sm:order-2">
+          <div
+            class="bg-gradient-to-t from-yellow-600 to-yellow-400 w-28 sm:w-32 h-40 sm:h-48 rounded-t-lg shadow-2xl flex items-center justify-center mx-auto">
+            <i data-lucide="crown" class="w-14 h-14 sm:w-16 sm:h-16 text-white"></i>
+          </div>
+          <p class="mt-3 font-bold text-xl sm:text-2xl text-yellow-600">1º Lugar</p>
+          <p class="text-gray-500 mt-1 text-sm sm:text-base">R$ 300</p>
+        </div>
+
+        <div class="text-center group hover:transform hover:scale-110 transition-transform order-3">
+          <div
+            class="bg-gradient-to-t from-orange-700 to-orange-600 w-24 sm:w-28 h-24 sm:h-28 rounded-t-lg shadow-xl flex items-center justify-center mx-auto">
+            <i data-lucide="star" class="w-8 h-8 sm:w-10 sm:h-10 text-white"></i>
+          </div>
+          <p class="mt-3 font-bold text-lg sm:text-xl text-gray-700">3º Lugar</p>
+          <p class="text-gray-500 mt-1 text-sm sm:text-base">R$ 100</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-br from-dark-green to-medium-green text-white py-12 px-4 sm:px-6">
+    <div class="container mx-auto max-w-6xl">
+      <div class="flex justify-center space-x-3 sm:space-x-4">
+        <a href="https://www.instagram.com/hackamazonia/"
+          class="w-9 h-9 sm:w-10 sm:h-10 bg-bright-green rounded-full flex items-center justify-center hover:bg-verde-bright transition touch-manipulation">
+          <i data-lucide="instagram" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/hackamaz%C3%B4nia/"
+          class="w-9 h-9 sm:w-10 sm:h-10 bg-bright-green rounded-full flex items-center justify-center hover:bg-verde-bright transition touch-manipulation">
+          <i data-lucide="linkedin" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+        </a>
+        <a href="https://github.com/HackAmazonia"
+          class="w-9 h-9 sm:w-10 sm:h-10 bg-bright-green rounded-full flex items-center justify-center hover:bg-verde-bright transition touch-manipulation">
+          <i data-lucide="github" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+        </a>
+      </div>
+
+      <p class="text-center text-xs sm:text-sm text-gray-400 mt-6 sm:mt-8">
+        HackAmazônia
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Inicializar os ícones do Lucide
+    lucide.createIcons();
+
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      const icon = mobileMenuButton.querySelector('i');
+      if (mobileMenu.classList.contains('hidden')) {
+        icon.setAttribute('data-lucide', 'menu');
+      } else {
+        icon.setAttribute('data-lucide', 'x');
+      }
+      lucide.createIcons();
+    });
+
+    // Close mobile menu when clicking a link
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        const icon = mobileMenuButton.querySelector('i');
+        icon.setAttribute('data-lucide', 'menu');
+        lucide.createIcons();
+      });
+    });
+  </script>
+</body>
 
 </html>
